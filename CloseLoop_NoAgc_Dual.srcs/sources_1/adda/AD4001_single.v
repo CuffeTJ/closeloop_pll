@@ -62,7 +62,7 @@ module ad4001_driver_single (
         end 
         else begin
             // Default assignment to create a single-cycle pulse for data_ready
-            data_ready_reg <= 1'b0;
+            //data_ready_reg <= 1'b0;
 
             case (state_reg)
                 // --- State: Initialization ---
@@ -124,6 +124,7 @@ module ad4001_driver_single (
                     tcyc_counter_reg <= tcyc_counter_reg + 1;
                     if (tcyc_counter_reg >= TCYC_CLOCKS - 1) begin
                         state_reg <= S_CONVERT_START; // Start next conversion cycle
+                        data_ready_reg <= 1'b0;
                     end
                 end
 
@@ -141,5 +142,6 @@ module ad4001_driver_single (
     assign adc_sck         = adc_sck_reg;
     assign conversion_data = conversion_data_reg;
     assign data_ready      = data_ready_reg;
+
 
 endmodule
