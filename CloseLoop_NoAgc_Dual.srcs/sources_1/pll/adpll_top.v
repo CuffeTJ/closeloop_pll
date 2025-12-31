@@ -153,6 +153,6 @@ cic_downsample #(
 // DAC clock output (synchronized with 1MHz)
 assign clk_dac = processing_done;
 assign amplitude_out = amplitude;
-assign data_sin = dco_sin;
+//assign data_sin = dco_sin;
 
 endmodule
