@@ -1,0 +1,41 @@
+## For ALINX AX7035b
+set_property IOSTANDARD LVCMOS33 [get_ports clk_50M]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+set_property PACKAGE_PIN Y18 [get_ports clk_50M]
+set_property PACKAGE_PIN F20 [get_ports rst_n]
+
+set_property IOSTANDARD LVCMOS33 [get_ports adc_cnv_1]
+set_property IOSTANDARD LVCMOS33 [get_ports adc_sck_1]
+set_property IOSTANDARD LVCMOS33 [get_ports adc_sdi_1]
+set_property IOSTANDARD LVCMOS33 [get_ports adc_sdo_1]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_cs_n_1]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_sclk_1]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_sdin_1]
+set_property PACKAGE_PIN P14 [get_ports adc_sdi_1]
+set_property PACKAGE_PIN U17 [get_ports adc_sck_1]
+set_property PACKAGE_PIN V17 [get_ports adc_sdo_1]
+set_property PACKAGE_PIN V18 [get_ports adc_cnv_1]
+set_property PACKAGE_PIN N17 [get_ports dac_cs_n_1]
+set_property PACKAGE_PIN P19 [get_ports dac_sclk_1]
+set_property PACKAGE_PIN R18 [get_ports dac_sdin_1]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports adc_cnv_2]
+set_property IOSTANDARD LVCMOS33 [get_ports adc_sck_2]
+set_property IOSTANDARD LVCMOS33 [get_ports adc_sdi_2]
+set_property IOSTANDARD LVCMOS33 [get_ports adc_sdo_2]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_cs_n_2]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_sclk_2]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_sdin_2]
+set_property PACKAGE_PIN U22 [get_ports dac_cs_n_2]
+set_property PACKAGE_PIN U20 [get_ports dac_sclk_2]
+set_property PACKAGE_PIN W21 [get_ports dac_sdin_2]
+set_property PACKAGE_PIN AA20 [get_ports adc_cnv_2]
+set_property PACKAGE_PIN AB21 [get_ports adc_sdo_2]
+set_property PACKAGE_PIN AA19 [get_ports adc_sck_2]
+set_property PACKAGE_PIN W19 [get_ports adc_sdi_2]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+set_property PACKAGE_PIN F16 [get_ports tx]
+
